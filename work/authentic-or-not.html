@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Or Not - Interactive Cooking Game</title>
+    <meta name="description" content="Authentic or not is an interactive game that helps people to learn recipes visually. It was born due to the misconceptions of authentic cuisines by others. Made by Yiting Liu and Shannel Doshi." >
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="element" class="active" href="../index.html">Work</a>
+        <a class="element" href="/experiments/experiments.html">Experiments</a>
+        <a class="element" href="../index.html#about">About</a>
+        <a class="element" href="http://yitingliu97.wordpress.com/">Blog</a>
+    </div>
+
+    <!-- create div for images and hover effect of the text -->
+    <!-- create simple portofolio placement with headings and words -->
+    <div class="portfolio-content">
+
+        <ul class="sideMenu">
+            <!-- <li><a href="#highlights"> Highlights</a></li> -->
+            <!-- <li> <a href="#problemStatement"> Problem Statement</a></li> -->
+            <li><a href="#background"> Background</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#ideation">Ideation & Development</a></li>
+            <!-- <li><a href="#development">Development</a></li> -->
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#solution">Solution</a></li>
+        </ul>
+
+        <div class="container">
+            <div class="wrapper">
+                <h1>Authentic or Not - Interactive Cooking Game</h1>
+                <h2 style="color:orange">An interactive game to learn recipes visually.
+                </h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="highlights">Highlights</h2>
+                <p>Tags: creative coding, physical computing, fabrication,interaction design</p>
+                <p>Time: Dec. 2019</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="exhibition">Exhibition</h2>
+                <ul>
+                    <li>
+                        <a href="https://youtu.be/11M3RLmayz8?t=1209">2019 ITP Winter Show</a>
+                    </li>
+                    <li>
+                        2020 Liberty Science Center 2020
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="problemStatement">Problem Statement</h2>
+                <h3>How to teach people authentic food to carry on the heritage of our culture?</h3>
+                <div class="gallery">
+                    <img src="../assets/authentic-or-not/authenticornot-demo.jpeg" alt="">
+                    <img src="../assets/authentic-or-not/authenticornot-enclosure-inside.jpeg" alt="">
+                    <img src="../assets/authentic-or-not/authenticornot-stand.jpeg" alt="">
+                    <img src="../assets/authentic-or-not/authenticornot-QR.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container">
+            <div class="wrapper">
+                <h2 id="concept">Concept</h2>
+                <p>Content</p>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="background">Background</h2>
+                <p>Living overseas for more than five years allows me to appreciate the Chinese culture even more. Since
+                    I only go back to China once a year, I treasure every moment I have with my family. Staying true to
+                    the tradition of the cuisine is my way of expressing my love for my family. However, my frustration
+                    with Chinese restaurants here in the U.S. grew when I discover their dishes are not as authentic as
+                    they advertised. Therefore, Shannel and I created this game to remind people to honor the
+                    traditional culture. </p>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <h2>Game Rules</h2>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="videoWrapper">
+                <iframe class="video" src="https://www.youtube.com/embed/nBPye7sNh18" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+
+                <ol>
+                    <li> Press the button to start the game
+                    </li>
+                    <li>Turn the encoder to select the cuisine Hover the hand on top of the ingredient bowls or use the
+                        spoon to mimic the cooking
+                    </li>
+
+                    <li>Turn the knob/encoder to select the layers of ingredients
+                    </li>
+
+                    <li>Press the button to end game
+                    </li>
+
+                    <li>Game over screen appears: reveal the score as well as the ingredients chosen
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="role">Role</h2>
+                <ul>
+                    <li>Creative coding with p5.js and Arduino</li>
+                    <li> Fabrication with laser cutter, 3d-printer, and power tools</li>
+                    <li> Iterations through multiple user testing sessions
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="research"><a href="https://authenticorbust.wixsite.com/authenticornot">Research Insights</a>
+                </h2>
+                <ul>
+                    <li>Popular dishes such as chicken tikka masala are technically not “authentic“</li>
+                    <li> Fortune cookies are not Chinese snacks. They originated from Japan, then populated by Chinese
+                        immigrants in California.</li>
+                    <li> There is a mismatch of information and perception.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="ideation">Ideation/Exploration & Development</h2>
+                <ul>
+                    <li> <a href="#interfaceDesign"> Interface Design</a>
+                    </li>
+                    <li> <a href="#materialSel">Material Selection</a>
+                    </li>
+                    <li> <a href="#sensorSel">Sensor Selection</a>
+                    </li>
+                    <li> <a href="#ui">Interface Design Prototype</a>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h3 id="interfaceDesign">Interface Design</h3>
+                <img src="../assets/authentic-or-not/interaction-design.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+
+                <h3 id="materialSel">Material Selection</h3>
+                <p> Use plywood and transparent acrylic sheet to create a minimalistic stove
+                </p>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+
+                <h3 id="sensorSel">Sensor Selection</h3>
+                <ul>
+                    <li>Motion sensors (not accurate and only detect the change of the movement)
+                    </li>
+                    <li>Infrared sensors (will be more effective, yet we wanted the clean outlook of the interface, out
+                        of stock)
+                    </li>
+                    <li>Ultrasonic sensors (best alternative out of three with the limited time frame. We would
+                        potentially upgrade to a <a href="https://www.sparkfun.com/products/14722"> more accurate
+                            one</a>)
+                    </li>
+                    <li>Encoder to select different layers rather than potentiometer
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+
+                <h3 id="ui">Interface Design Prototype</h3>
+                <ul>
+                    <li>What may be comfortable and intuitive for users?
+
+                    </li>
+                    <li>What makes sense in terms of hand movements?
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="testing">Refinement and Testing</h2>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <h3>User Testing</h3>
+                <p>We conducted three sessions of user testing throughout the process. The first one was conducted with
+                    a paper prototype and barely working code. The second one was a prototype with functioning code. The
+                    last one was the final project with working code.
+                </p>
+
+                <h3>Observations</h3>
+                <p>60% of players use the spoon while the rest use hand
+                    20% of players tried to lift the bowl
+                    30% of players used the spoon to mix in the big bowl (which functions as a decoration)
+                </p>
+
+                <h3>In-depth Interview Insights</h3>
+                <ul>
+                    <li>Instructions are too wordy
+                    </li>
+                    <li>Transition from cuisine selection to ingredient selection is unclear
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <h3>Adjustments</h3>
+                <p>Based on the feedback, I adjusted a few to make the interactive experience smoother
+                </p>
+                <ul>
+                    <li>Separated the instruction into more screens. The goal is to have one instruction per screen.
+                    </li>
+                    <li> Added transition in cuisine selection screen</li>
+                    <li> Implemented details on the game over phase</li>
+                    <li> Added traditional music and sound effects to create an immersive cooking experience
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="solution">Solution</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h3>Interface Design Highlights</h3>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="gallery">
+
+                    <div>
+                        <p>Start the game</p>
+                        <img src="../assets/authentic-or-not/UI-begin-the-game.gif" alt="">
+                    </div>
+                    <div>
+                        <p>Select the recipes</p>
+                        <img src="../assets/authentic-or-not/UI-recipe-layer-turn-to-select.gif" alt="">
+                    </div>
+                    <div>
+                        <p>Select the ingredients</p> <img src="../assets/authentic-or-not/UI-selectingingredients-aon.gif"
+                            alt="">
+                    </div>
+                    <div>
+                        <p>End of the game</p> <img src="../assets/authentic-or-not/UI-end-of-the-game.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h3>Screen Demo</h3>
+                <p>Here is the video showing the digital interface created in p5.js.
+                </p>
+                <div class="videoWrapper">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/1MsxV_bLsUQ"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <br>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="next">Moving forward</h2>
+
+                <ul>
+                    <li>Update the ultrasonic sensors to <a href="https://www.sparkfun.com/products/14722"> VL53L1X
+                            distance sensor</a></li>
+                    <li> Create a canceling effect on the ingredients that are mistakenly chosen by the users</li>
+                    <li> Create a new enclosure that mimics the conduction top - feedback from one user testing session
+                    </li>
+                    <li> Make the button and the encoder cover out of the same material to create consistency</li>
+                    <li> Potentially will not glue the bowls to the platform, allowing to freedom to either pick it up
+                        and dump it in the big bowl</li>
+                </ul>
+            </div>
+        </div>
+    <div class="container">
+        <div class="wrapper">
+            <h2>People Playing the Game</h2>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="videoWrapper">
+            <iframe class="video" src="https://www.youtube.com/embed/hQfdMFAN7vg" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="container">
+        <div class="wrapper">
+            <h2 id="applications">Applications</h2>
+            <h3>Small Scope:</h3>
+            <ul>
+                <li>Friendly competition of knowledge of traditional cuisine </li>
+                <li> Educational board game for the public Game center played through projection and Kinect </li>
+                <li>Helps to hold ethnic restaurants accountable for their decision on presenting the dishes to
+                the public
+                </li>
+            </ul>
+            <h3>Large Scope:</h3>
+            <ul>
+                <li>An app educates people how to make traditional cuisine by recognizing whatever they picked up in a
+                    grocery store
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <h2 id="conclusion">Conclusion</h2>
+            <p>The game is incomplete without the participation of the players. It is empowering to see people trying
+                the game multiple times to get it right. One kid in particular spent 20 minutes in the station in order
+                to get both cuisines right. It is rewarding to see people from different age groups enjoying the game.
+            </p>
+            <p>With the recipes to take home along, I am hoping that the education of the traditional cuisine will be
+                continued. I see it as a success to achieve the goal of the game: to educate people of traditional
+                cuisine in order to honor the culture.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <p ><em>Special thanks to Shannel Doshi.</em> </p>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="documentationButton">
+                <a href="https://yitingliu97.wordpress.com/category/ipc-intro-to-physical-computing/">Check out my
+                    detailed documentation here. </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+    <footer>Proudly created by Yiting Liu, creative technologist with passion for food and music.</footer>
+</body>
+
+</html>

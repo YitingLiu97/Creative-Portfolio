@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood for Food - Gives your recipes based on your feelings. - Fullstack Web</title>
+    <meta name="description" content="To find your fillings to your feelings. Try this playful website now! Made by Yiting Liu during NYU ITP program in 2020.">
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="element" class="active" href="../index.html">Work</a>
+        <a class="element" href="/experiments/experiments.html">Experiments</a>
+        <a class="element" href="../index.html#about">About</a>
+        <a class="element" href="http://yitingliu97.wordpress.com/">Blog</a>
+    </div>
+    
+    <!-- create div for images and hover effect of the text -->
+    <!-- create simple portofolio placement with headings and words -->
+    <div class="portfolio-content">
+
+        <ul class="sideMenu">
+            <!-- <li><a href="#highlights"> Highlights</a></li> -->
+            <!-- <li> <a href="#problemStatement"> Problem Statement</a></li> -->
+            <li><a href="#concept"> Concept</a></li>
+            <li><a href="#research">Research</a></li>
+            <!-- <li><a href="#ideation">Ideation</a></li> -->
+            <li><a href="#development">Development</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#solution">Solution</a></li>
+        </ul>
+
+        <div class="container">
+            <div class="wrapper">
+                <h1>Mood for Food - Fullstack Web</h1>
+                <h2 style="color:orange">A website offers food options based on user emotions. </h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="highlights">Highlights</h2>
+                <p>Tag: Html, CSS, Javascript, Heroku, Node, Database, MongoDB, Interaction Design, Visual Design
+                </p>
+                <p>Time: Feb. 2019</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2><a href="http://mood-for-food.herokuapp.com/">Official Web here</a></h2>
+                <div class="videoWrapper">
+                    <iframe class="video" src="http://mood-for-food.herokuapp.com/" class="video" frameborder="0"
+                    allowfullscreen></iframe>
+                    </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="videoWrapper">
+                <iframe class="video" src="https://www.youtube.com/embed/HgDYBSmwyUM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="problemStatement">Problem Statement</h2>
+                <h3>How might we help people who can not decide what to eat to find the right food based on their
+                    feelings?
+                </h3>
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="background">Background</h2>
+                <p>I am a foodie and everytime I think about what I want to eat next meal after meal. I enjoy the
+                    process of exploring amazing food to make or to eat out. However, it could be exhausting at times.
+                    Also, my mood affects what I want to eat. I want to combine my mood with food searching tools to
+                    create a whimsical and playful search engine for food to make or food to get.</p>
+
+
+                <p> This project is a passion project that will benefit people who spend lots of time to figure out what
+                    to eat for their meals. Especially when they are feeling down, certain food can help lighten the
+                    mood.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="role">Role</h2>
+                <p>Developer & Designer
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="research">Research</h2>
+                <p>I did research to figure out what food is for certain emotions. I searched for six universal human
+                    emotions: happy, sad, anger, surprise, fear, disgust from <a
+                        href="https://www.verywellmind.com/an-overview-of-the-types-of-emotions-4163976">here</a>.
+                    I decided to start with three emotions: <strong>sad, stressed, and anger</strong> since most of the
+                    information I found are to make people happy in terms of food selections.
+                </p>
+                <p>I searched related food for certain moods through online articles. I then build a data model in a
+                    spreadsheet. I iterated the data model three times to achieve a more efficient way for my clients.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <h3>Building Database</h3>
+                <p>I built my data model in excel first. There are ingredients for emotions respectively:</p>
+                <p>I then searched for recipes with that certain individual ingredient online. Most of the sources are
+                    from <a href="https://www.bbcgoodfood.com/recipes"> BBC Good Food</a> for its comprehensive data.
+                </p>
+
+                <div class="videoWrapper">
+                <iframe class="chart"
+                    src="https://docs.google.com/spreadsheets/d/1R3hvB-oSJMKauBgnzyUCVXndSItdwuIQi5NXpZDHloA/edit?usp=sharing"
+                    frameborder="0" allowfullscreen></iframe>
+                    </div>
+                <p>After several iterations, my data model looks as below:
+
+                </p>
+                <strong>Emotion Types ==> Recipe Info ==> Ingredients ==> Recipe URL
+                </strong>
+                <img src="../assets/mood-for-food/data-model-mood-for-food.png" alt="">
+
+                <p>I build the Schema for my database using Mongoose. </p>
+                <img src="../assets/mood-for-food/recipeSchema.png" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="ideation">Ideation/Exploration</h2>
+                <p>Web flow</p>
+                <img src="../assets/mood-for-food/webflow.png" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="development">Development</h2>
+                <p>Front-End is so much fun!</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h3>Front-End - Flexbox</h3>
+                <p>I was having trouble with flexbox to create what I wanted. Turns out I would have to make sure the
+                    whole page with the display:flex and tweak around the row and column and other details. This website
+                    is a complete guide to flexbox.
+                </p>
+                <img src="../assets/mood-for-food/foodImgsDemo.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h3>Front-End - Cursor Customization</h3>
+                <p> I wanted to customize the cursor in JS since I would ideally want the different emojis to replace
+                    the default cursor every 10 seconds when the user is browsing on the page. However, I tried in JS to
+                    use the code below. It still didn't work. </p>
+                <p>So I just customize the cursor in CSS. I would love to learn to customize the cursor in JS in the
+                    future.
+                </p>
+                <img src="../assets/mood-for-food/cursor.png" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h3>Front-End - Interaction Flow</h3>
+                <p> I created the function of fun part in my client.js to have the following features:
+                </p>
+                <ul>
+                    <li>Change background color based on mouse position</li>
+
+                    <li> Reset background color when mouse is off the website</li>
+
+                    <li> Add emojis based on key press</li>
+
+                    <li> Clean emojis when pressing the spacebar</li>
+                </ul>
+                <p>There are so many detailed aspects in terms of front-end. I wanted to create the experience as
+                    user-friendly as possible, therefore, I tried testing navigating the browser and had my friends
+                    using it several times to improve it.
+
+                </p>
+                <!-- <img src="../assets/mood-for-food/moodforfood_emoji.gif" alt=""> -->
+
+
+                <h3>Insights:</h3>
+                <ul>
+                    <li>
+                        Love the changing of background and emoji features</li>
+
+                    <li> The recipe text of the image is not completely aligned</li>
+
+                    <li> Would love to see more features such as delivery services, restaurants, reviews.
+                    </li>
+                </ul>
+                <p>Changing background with mouse position & Hovering on image effect.
+
+                </p>
+
+                <img src="../assets/mood-for-food/moodforfood_imagehoover.gif" alt="">
+
+
+
+                <p>Generating emojis by pressing keys.
+
+                </p>
+                <img src="../assets/mood-for-food/moodforfood_emoji.gif" alt="">
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="testing">Refinement and Testing</h2>
+                <h3>Ordering matters for Back-End
+                </h3>
+                <p>I didn't use MongoDB at first since I was building my own JSON file. It turns out connecting to MongoDB using Mongoose would make the whole process easier.                </p>
+            <p>I did conquer the part of showing the content with my previous data structure before using any MongoDB, which took a long time. 
+
+            </p>
+
+            <img src="../assets/mood-for-food/data-model-mood-for-food.png" alt="">
+        <h3>Data model iterated three times 
+        </h3>    
+
+        <p>I originally followed the model straight from excel, however, what I really wanted was to have the mood determine the ingredients and show the recipes that include the ingredients. Ideally, I want to choose one recipe for one ingredient in the ingredient list for one emotion. It got too complicated at the time and it was not as crucial. 
+
+        </p>
+
+        <p>So the final data model looks like this: 
+
+        </p>
+        <strong>Emotion Types ==> Recipe Information ==> Further Details of Special Ingredients ==> Link to Url
+
+        </strong>
+        </div>
+
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="solution">Solution</h2>
+                <p>I build this website using pastel color palette and emojis to bring you happiness even when you are feeling done!
+
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <h2 id="next">Moving forward</h2>
+                <ul>
+                    <li>Develop the visuals for the click after the recipe image </li>
+
+                    <li>    Enhance the website with more features such as restaurants, delivery, and reviews.</li>   
+                        
+                    <li> Cursor Customization in JS</li>   
+                        
+                    <li>Smoother User Interactions
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <p><em>Special thanks to Cassie Tarakajian, Tirta Wening Rachman for help along the way. </em></p>
+
+              <p>  Made within 3 weeks in Mar. 2020.  </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="documentationButton">
+                <a href="https://github.com/YitingLiu97/mood_for_food">Check out my
+                    detailed documentation on github. </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>Proudly created by Yiting Liu, creative technologist with passion for food and music.</footer>
+</body>
+
+</html>
