@@ -23,6 +23,9 @@ body {
 h1, h2, h3, h4, h5, p {
     padding-top: 10px;
 }
+.aboutIntro h2{
+    font-size:xxx-large;
+}
 
 h1 {
     color: plum;
@@ -397,6 +400,9 @@ img {
     body{
         font-size: large;
     }
+    .aboutIntro h2{
+        font-size: medium;
+    }
 }
 
 /* tablet */
@@ -406,5 +412,9 @@ img {
     footer {
         font-size: x-small;
     }
+    .aboutIntro h2{
+        font-size: medium;
+    }
+
   }
   
