@@ -331,6 +331,7 @@ img {
       outline: none;
       /* border-bottom: lightcoral 1pt dotted; */
     padding: 12px 16px;
+    background-color: white;
     /* background-color: #f1f1f1; */
     cursor: pointer;
   }
