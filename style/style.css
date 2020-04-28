@@ -225,6 +225,13 @@ img {
     margin: auto;
 }
 
+#aboutIntro img{
+    height: 200px;
+    width: auto;
+    /* display: float; */
+    display: block;
+    
+}
 .video {
     /* border: 1pt yellow dotted; */
     border-radius: 5px;

@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mood for Food - Gives your recipes based on your feelings. - Fullstack Web</title>
-    <meta name="description" content="To find your fillings to your feelings. Try this playful website now! Made by Yiting Liu during NYU ITP program in 2020.">
+    <meta name="description"
+        content="To find your fillings to your feelings. Try this playful website now! Made by Yiting Liu during NYU ITP program in 2020.">
 
     <link rel="stylesheet" href="../style/style.css">
+    <script src="/sketches/aboutIntro.js"></script>
+
 </head>
 
 <body>
@@ -17,7 +20,7 @@
         <a class="element" href="../index.html#about">About</a>
         <a class="element" href="http://yitingliu97.wordpress.com/">Blog</a>
     </div>
-    
+
     <!-- create div for images and hover effect of the text -->
     <!-- create simple portofolio placement with headings and words -->
     <div class="portfolio-content">
@@ -45,7 +48,10 @@
                 <h2 id="highlights">Highlights</h2>
                 <!-- <p>Tag: Html, CSS, Javascript, Heroku, Node, Database, MongoDB, Interaction Design, Visual Design -->
                 <!-- </p> -->
-                <p>I created a full stack web application within 3 weeks providing users recipes based on their emotion inputs from ideation to execution. I conducted research, designed user webflow, graphics, and data structure for this project. I worked on both client and server side with HTML, CSS, Javascript, Node.js, MongoDB, Git, and Heroku. </p>
+                <p>I created a full stack web application within 3 weeks providing users recipes based on their emotion
+                    inputs from ideation to execution. I conducted research, designed user webflow, graphics, and data
+                    structure for this project. I worked on both client and server side with HTML, CSS, Javascript,
+                    Node.js, MongoDB, Git, and Heroku. </p>
                 <p>Time: Feb. 2020</p>
             </div>
         </div>
@@ -55,8 +61,8 @@
                 <h2><a href="http://mood-for-food.herokuapp.com/">Official Web here</a></h2>
                 <div class="videoWrapper">
                     <iframe class="video" src="http://mood-for-food.herokuapp.com/" class="video" frameborder="0"
-                    allowfullscreen></iframe>
-                    </div>
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
 
@@ -65,12 +71,12 @@
         <div class="container">
             <div class="wrapper">
                 <div class="videoWrapper">
-                <iframe class="video" src="https://www.youtube.com/embed/HgDYBSmwyUM" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    <iframe class="video" src="https://www.youtube.com/embed/HgDYBSmwyUM" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="container">
@@ -131,11 +137,24 @@
                     from <a href="https://www.bbcgoodfood.com/recipes"> BBC Good Food</a> for its comprehensive data.
                 </p>
 
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
+
                 <div class="videoWrapper">
-                <iframe class="chart"
-                    src="https://docs.google.com/spreadsheets/d/1R3hvB-oSJMKauBgnzyUCVXndSItdwuIQi5NXpZDHloA/edit?usp=sharing"
-                    frameborder="0" allowfullscreen></iframe>
-                    </div>
+                    <iframe class="chart"
+                        src="https://docs.google.com/spreadsheets/d/1R3hvB-oSJMKauBgnzyUCVXndSItdwuIQi5NXpZDHloA/edit?usp=sharing"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="wrapper">
                 <p>After several iterations, my data model looks as below:
 
                 </p>
@@ -242,33 +261,47 @@
                 <h2 id="testing">Refinement and Testing</h2>
                 <h3>Ordering matters for Back-End
                 </h3>
-                <p>I didn't use MongoDB at first since I was building my own JSON file. It turns out connecting to MongoDB using Mongoose would make the whole process easier.                </p>
-            <p>I did conquer the part of showing the content with my previous data structure before using any MongoDB, which took a long time. 
+                <p>I didn't use MongoDB at first since I was building my own JSON file. It turns out connecting to
+                    MongoDB using Mongoose would make the whole process easier. </p>
+                <p>I did conquer the part of showing the content with my previous data structure before using any
+                    MongoDB, which took a long time.
 
-            </p>
+                </p>
 
-            <img src="../assets/mood-for-food/data-model-mood-for-food.png" alt="">
-        <h3>Data model iterated three times 
-        </h3>    
-
-        <p>I originally followed the model straight from excel, however, what I really wanted was to have the mood determine the ingredients and show the recipes that include the ingredients. Ideally, I want to choose one recipe for one ingredient in the ingredient list for one emotion. It got too complicated at the time and it was not as crucial. 
-
-        </p>
-
-        <p>So the final data model looks like this: 
-
-        </p>
-        <strong>Emotion Types ==> Recipe Information ==> Further Details of Special Ingredients ==> Link to Url
-
-        </strong>
+                <img src="../assets/mood-for-food/data-model-mood-for-food.png" alt="">
+            </div>
         </div>
 
+
+        <div class="container">
+            <div class="wrapper">
+
+
+                <h3>Data model iterated three times
+                </h3>
+
+                <p>I originally followed the model straight from excel, however, what I really wanted was to have the
+                    mood determine the ingredients and show the recipes that include the ingredients. Ideally, I want to
+                    choose one recipe for one ingredient in the ingredient list for one emotion. It got too complicated
+                    at the time and it was not as crucial.
+
+                </p>
+
+                <p>So the final data model looks like this:
+
+                </p>
+                <strong>Emotion Types ==> Recipe Information ==> Further Details of Special Ingredients ==> Link to Url
+
+                </strong>
+
+            </div>
         </div>
 
         <div class="container">
             <div class="wrapper">
                 <h2 id="solution">Solution</h2>
-                <p>I build this website using pastel color palette and emojis to bring you happiness even when you are feeling done!
+                <p>I build this website using pastel color palette and emojis to bring you happiness even when
+                    you are feeling done!
 
                 </p>
             </div>
@@ -280,34 +313,202 @@
                 <ul>
                     <li>Develop the visuals for the click after the recipe image </li>
 
-                    <li>    Enhance the website with more features such as restaurants, delivery, and reviews.</li>   
-                        
-                    <li> Cursor Customization in JS</li>   
-                        
+                    <li> Enhance the website with more features such as restaurants, delivery, and reviews.</li>
+
+                    <li> Cursor Customization in JS</li>
+
                     <li>Smoother User Interactions
                     </li>
                 </ul>
             </div>
         </div>
 
-    <div class="container">
-        <div class="wrapper">
-            <p><em>Special thanks to Cassie Tarakajian, Tirta Wening Rachman for help along the way. </em></p>
+        <div class="container">
+            <div class="wrapper">
+                <p><em>Special thanks to Cassie Tarakajian, Tirta Wening Rachman for help along the way. </em>
+                </p>
 
-              <p>  Made within 3 weeks in Feb. 2020.  </p>
+                <p> Made within 3 weeks in Feb. 2020. </p>
+            </div>
         </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="documentationButton">
+                    <a href="https://github.com/YitingLiu97/mood_for_food">Check out my
+                        detailed documentation on github. </a>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
-    <div class="container">
-        <div class="wrapper">
-            <div class="documentationButton">
-                <a href="https://github.com/YitingLiu97/mood_for_food">Check out my
-                    detailed documentation on github. </a>
+    <div id="work" class="projectGallery">
+        <div class="container">
+            <div class="wrapper">
+
+                <a href="../index.html#work" > <h2> <strong style="border-bottom:1pt double lightcoral">WORK</strong></h2></a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('pcomp')"> Physical Computing</button>
+                    <button class="btn" onclick="filterSelection('fab')"> Fabrication</button>
+                    <button class="btn" onclick="filterSelection('web')"> Web Application</button>
+                    <button class="btn" onclick="filterSelection('videoSculpture')"> Video Sculpture</button>
+                    <button class="btn" onclick="filterSelection('music')"> Music</button>
+                    <button class="btn" onclick="filterSelection('product')"> Product Design</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="gallery"></div> -->
+        <a class="filterDiv music" class="projectLink" href="everyday.html">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapperShow">
+                        <div class="textBlock">
+                            <h4>Live Performance, Music, Art </h4>
+                            <h2>A Day, Any Day, Everyday - Live Performance</h2>
+                            <p>An audiovisual performance echoing the feeling of voidness and the draining of
+                                energy
+                                while living through the COVID-19. </p>
+                            <p> Created under 6 hours for PerformaJam LIVE - CultureHub and Adjacent Jounral.
+                            </p>
+
+                        </div>
+                        <img class="wrapperImg" src="../assets/performajam-everyday/performajam_title.jpeg" alt="">
+                    </div>
+
+                </div>
             </div>
 
-        </div>
+            <a class="filterDiv product pcomp fab" class="projectLink" href="zeal.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>Product Design, Wearable Tech </h4>
+                                <h2>Zeal - Product Design</h2>
+                                <p>A personal Apple watch band that keeps you warm in the cold.
+                                </p>
+                                <p>Skills: Design Research, Market Analysis, Fabrication, Art Direction </p>
+
+                            </div>
+                            <img class="wrapperImg" src="../assets/product-design-zeal/looks-like-demo.jpeg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </a>
+            <a class="filterDiv web" class="projectLink" href="audio-diary.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>UX, UI, Web </h4>
+                                <h2>Audio Diary - Front-End Web</h2>
+                                <p>Talk about your feelings to get through hard times.
+                                </p>
+                                <p> Tools: Front-End,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech
+                                </p>
+                            </div>
+                            <img class="wrapperImg" src="../assets/audio-diary/demo3.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+            <a class="filterDiv web" class="projectLink" href="mood-for-food.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>UX, UI, Interaction Design, Fullstack Web </h4>
+                                <h2>Mood for Food - Fullstack Web</h2>
+                                <p>A website offers food options based on user emotions.</p>
+
+                                <p> Tools: HTML5, CSS, Javascript, Node.js, Database, MongoDB, Github, Heroku
+                                </p>
+                            </div>
+                            <img class="wrapperImg" src="../assets/mood-for-food/moodforfood_emoji.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <a class="filterDiv pcomp product fab" class="projectLink" href="authentic-or-not.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>UX, UI, Interaction Design, & Product Design </h4>
+                                <h2>Authentic or Not - Interactive Cooking Game</h2>
+                                <p>An interactive game to learn recipes visually.
+                                </p>
+                                <p> Skills: Fabrication, Physical Computing, Creative Coding</p>
+                            </div>
+                            <img class="wrapperImg" src="../assets/authentic-or-not/authenticornot-demo.jpeg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+            <a class="filterDiv pcomp fab videoSculpture" class="projectLink" href="double-date.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>Experience Design & Interaction Design </h4>
+                                <h2>Double Date - Video Sculpture</h2>
+                                <p> An interactive video sculpture exploring the relationships between humans
+                                    and
+                                    phones. </p>
+                                <p> Tools: Arduino, Sprite, Projector, Laser-Cutter, After Effects, Premiere,
+                                    Illustrator
+                                </p>
+                            </div>
+                            <img class="wrapperImg" src="../assets/double-date/presentation.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+
+            <a class="filterDiv videoSculpture" class="projectLink" href="all-connecting.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>Experience, Interaction Design, & Performance </h4>
+                                <h2>All Connecting - Video Sculpture</h2>
+                                <p>An interactive video sculpture that exposes the systems of the Internet in
+                                    real-time.
+                                </p>
+                                <p> Skills: Projection mapping, MadMapper, Processing, Syphon Recorder,
+                                    Real-Time
+                                    Performance</p>
+                            </div>
+                            <img class="wrapperImg" src="../assets/all-connecting/all-connecting-demo.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
     </div>
 
+    <br>
+    <br>
+    <br>
     <footer>Proudly created by Yiting Liu, a creative technologist with passion for food and music.</footer>
 </body>
 
