@@ -195,11 +195,10 @@ footer {
 .gallery {
     width: 100%;
     margin: auto;
-    /* margin: 0 5%; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-     padding-top: 10px;
+    padding-top: 10px;
 }
 
 .gallery p {
@@ -214,7 +213,6 @@ footer {
 
 .gallery img, .gallery iframe {
     /* margin: auto; */
-    /* width: 48%; */
     padding: 1%;
     height: 300px;
     width: auto;
@@ -229,8 +227,9 @@ img {
 
 .video {
     /* border: 1pt yellow dotted; */
+    border-radius: 5px;
+    /* box-shadow: lightcoral 20px 5px; */
     /* box-shadow: rosybrown 20px; */
-    padding: 10px;
     width: 100%;
 }
 
