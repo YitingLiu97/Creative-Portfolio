@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yiting Liu's Portfolio - Creative Technologist </title>
     <meta name="description" content="This is Yiting's playground of creative technology in the realm of food, music, and performances.
     Yiting is a maker, coder, and a marketer. ">
-     <link rel="stylesheet" href="style/style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../sketches/aboutIntro.js"></script>
 </head>
 
 <body>
-    
+
     <div id="emojis"></div>
 
     <div class="topnav">
@@ -31,7 +32,8 @@
                     <h2 style="font-size:xxx-large">Hi, Yiting here!
                         <!-- add gif of my photos? -->
                         <br>
-                        I am a <mark>creative technologist </mark> designing experiences to foster meaningful interactions
+                        I am a <mark>creative technologist </mark> designing experiences to foster meaningful
+                        interactions
                         through <mark>food</mark>, <mark>music</mark>, and <mark> performance</mark>.
                     </h2>
                     <br><br>
@@ -56,7 +58,7 @@
         </div>
     </div>
 
-    <div id="work"class="projectGallery">
+    <div id="work" class="projectGallery">
         <div class="container">
             <div class="wrapper">
 
@@ -64,187 +66,189 @@
             </div>
         </div>
 
-
-        <!-- create work tags -->
-
         <div class="container">
             <div class="wrapper">
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('pcomp')"> Physical Computing</button>
-            <button class="btn" onclick="filterSelection('fab')"> Fabrication</button>
-            <button class="btn" onclick="filterSelection('web')"> Web Application</button>
-            <button class="btn" onclick="filterSelection('videoSculpture')"> Video Sculpture</button>
-            <button class="btn" onclick="filterSelection('music')"> Music</button>
-            <button class="btn" onclick="filterSelection('product')"> Product Design</button>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('pcomp')"> Physical Computing</button>
+                    <button class="btn" onclick="filterSelection('fab')"> Fabrication</button>
+                    <button class="btn" onclick="filterSelection('web')"> Web Application</button>
+                    <button class="btn" onclick="filterSelection('videoSculpture')"> Video Sculpture</button>
+                    <button class="btn" onclick="filterSelection('music')"> Music</button>
+                    <button class="btn" onclick="filterSelection('product')"> Product Design</button>
 
-          </div>
+                </div>
             </div>
+        </div>
+
+        <a class="filterDiv music" class="projectLink" href="work/everyday.html">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapperShow">
+                        <div class="textBlock">
+                            <h4>Live Performance, Music, Art </h4>
+                            <h2>A Day, Any Day, Everyday - Live Performance</h2>
+                            <p>An audiovisual performance echoing the feeling of voidness and the draining of energy
+                                while living through the COVID-19. </p>
+                            <p> Created under 6 hours for PerformaJam LIVE - CultureHub and Adjacent Jounral. </p>
+
+                        </div>
+                        <img class="wrapperImg" src="assets/performajam-everyday/performajam_title.jpeg" alt="">
+                    </div>
+
+                </div>
             </div>
 
-            <a  class="filterDiv music" class="projectLink" href="work/everyday.html" >
+            <a class="filterDiv product pcomp fab" class="projectLink" href="work/zeal.html">
                 <div class="container">
                     <div class="wrapper">
-                        <div class="wrapperShow" >
+                        <div class="wrapperShow">
                             <div class="textBlock">
-                                <h4>Live Performance, Music, Art </h4>
-                                <h2>A Day, Any Day, Everyday - Live Performance</h2>
-                                <p>A live audiovisual performance echoing the efforts we make living through the experience where days are no longer days and nights are no longer nights.
+                                <h4>Product Design, Wearable Tech </h4>
+                                <h2>Zeal - Product Design</h2>
+                                <p>A personal Apple watch band that keeps you warm in the cold.
                                 </p>
-                                <p> This is created under 6 hours for PerformaJam with CultureHub and Adjacent Jounral.  </p>
-                               
+                                <p>Skills: Design Research, Market Analysis, Fabrication, Art Direction </p>
+
                             </div>
-                            <img class="wrapperImg" src="assets/performajam-everyday/performajam_title.jpeg" alt="">
+                            <img class="wrapperImg" src="assets/product-design-zeal/looks-like-demo.jpeg" alt="">
                         </div>
-    
+
                     </div>
                 </div>
 
-            <a  class="filterDiv product pcomp fab" class="projectLink" href="work/zeal.html" >
-            <div class="container">
-                <div class="wrapper">
-                    <div class="wrapperShow" >
-                        <div class="textBlock">
-                            <h4>Product Design, Wearable Tech </h4>
-                            <h2>Zeal - Product Design</h2>
-                            <p>A personal Apple watch band that keeps you warm in the cold.
-                            </p>
-                            <p>Skills: Design Research, Market Analysis, Fabrication, Art Direction </p>
-                           
-                        </div>
-                        <img class="wrapperImg" src="assets/product-design-zeal/looks-like-demo.jpeg" alt="">
-                    </div>
-
-                </div>
-            </div>
-
-        </a>
-        <a   class="filterDiv web"class="projectLink" href="work/audio-diary.html" >
-            <div class="container">
-                <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>UX, UI, Web </h4>
-                            <h2>Audio Diary - Front-End Web</h2>
-                            <p>Talk about your feelings to get through hard times.
-                            </p>
-                            <p> Tools: Front-End,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech</p>
-                        </div>
-                        <img class="wrapperImg" src="assets/audio-diary/demo3.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </a>
- 
-        <a  class="filterDiv web" class="projectLink" href="work/mood-for-food.html" >
-            <div class="container">
-                <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>UX, UI, Interaction Design, Fullstack Web </h4>
-                            <h2>Mood for Food - Fullstack Web</h2>
-                            <p>A website offers food options based on user emotions.</p>
-         
-                            <p> Tools: HTML5, CSS, Javascript, Node.js, Database, MongoDB, Github, Heroku</p>
-                        </div>
-                        <img class="wrapperImg" src="assets/mood-for-food/moodforfood_emoji.gif" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-
-
-        <a class="filterDiv pcomp product fab" class="projectLink" href="work/authentic-or-not.html"  >
-            <div class="container" >
-                <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>UX, UI, Interaction Design, & Product Design </h4>
-                            <h2>Authentic or Not - Interactive Cooking Game</h2>
-                            <p>An interactive game to learn recipes visually.
-                            </p>
-                            <p> Skills: Fabrication, Physical Computing, Creative Coding</p>
-                        </div>
-                        <img class="wrapperImg" src="assets/authentic-or-not/authenticornot-demo.jpeg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </a>
- 
-        <a class="filterDiv pcomp fab videoSculpture" class="projectLink" href="work/double-date.html"  >
-            <div class="container"  >
-                <div class="wrapper">
-                    <div class="wrapperShow" >
-                        <div class="textBlock">
-                            <h4>Experience Design & Interaction Design </h4>
-                            <h2>Double Date - Video Sculpture</h2>
-                            <p> An interactive video sculpture exploring the relationships between humans and phones. </p>
-                           <p> Tools: Arduino, Sprite, Projector, Laser-Cutter, After Effects, Premiere, Illustrator 
+            </a>
+            <a class="filterDiv web" class="projectLink" href="work/audio-diary.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>UX, UI, Web </h4>
+                                <h2>Audio Diary - Front-End Web</h2>
+                                <p>Talk about your feelings to get through hard times.
                                 </p>
+                                <p> Tools: Front-End,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech</p>
+                            </div>
+                            <img class="wrapperImg" src="assets/audio-diary/demo3.jpg" alt="">
                         </div>
-                        <img class="wrapperImg" src="assets/double-date/presentation.jpg" alt="">
-                    </div>
 
-                </div>
-            </div>
-        </a>
-
-
-        <a class="filterDiv videoSculpture" class="projectLink" href="work/all-connecting.html" >
-            <div class="container" >
-                <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>Experience, Interaction Design, & Performance </h4>
-                            <h2>All Connecting - Video Sculpture</h2>
-                            <p>An interactive video sculpture that exposes the systems of the Internet in real-time.</p>
-                            <p> Skills: Projection mapping, MadMapper, Processing, Syphon Recorder, Real-Time Performance</p>
-                        </div>
-                        <img class="wrapperImg" src="assets/all-connecting/all-connecting-demo.jpeg" alt="">
                     </div>
                 </div>
-            </div>
-        </a>
+            </a>
+
+            <a class="filterDiv web" class="projectLink" href="work/mood-for-food.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>UX, UI, Interaction Design, Fullstack Web </h4>
+                                <h2>Mood for Food - Fullstack Web</h2>
+                                <p>A website offers food options based on user emotions.</p>
+
+                                <p> Tools: HTML5, CSS, Javascript, Node.js, Database, MongoDB, Github, Heroku</p>
+                            </div>
+                            <img class="wrapperImg" src="assets/mood-for-food/moodforfood_emoji.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <a class="filterDiv pcomp product fab" class="projectLink" href="work/authentic-or-not.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>UX, UI, Interaction Design, & Product Design </h4>
+                                <h2>Authentic or Not - Interactive Cooking Game</h2>
+                                <p>An interactive game to learn recipes visually.
+                                </p>
+                                <p> Skills: Fabrication, Physical Computing, Creative Coding</p>
+                            </div>
+                            <img class="wrapperImg" src="assets/authentic-or-not/authenticornot-demo.jpeg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+            <a class="filterDiv pcomp fab videoSculpture" class="projectLink" href="work/double-date.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>Experience Design & Interaction Design </h4>
+                                <h2>Double Date - Video Sculpture</h2>
+                                <p> An interactive video sculpture exploring the relationships between humans and
+                                    phones. </p>
+                                <p> Tools: Arduino, Sprite, Projector, Laser-Cutter, After Effects, Premiere,
+                                    Illustrator
+                                </p>
+                            </div>
+                            <img class="wrapperImg" src="assets/double-date/presentation.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+
+            <a class="filterDiv videoSculpture" class="projectLink" href="work/all-connecting.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>Experience, Interaction Design, & Performance </h4>
+                                <h2>All Connecting - Video Sculpture</h2>
+                                <p>An interactive video sculpture that exposes the systems of the Internet in real-time.
+                                </p>
+                                <p> Skills: Projection mapping, MadMapper, Processing, Syphon Recorder, Real-Time
+                                    Performance</p>
+                            </div>
+                            <img class="wrapperImg" src="assets/all-connecting/all-connecting-demo.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
     </div>
 
-        <div class="container">
-            <div class="wrapper">
-                <h2>Experiences</h2>
-            </div>
+    <div class="container">
+        <div class="wrapper">
+            <h2>Experiences</h2>
         </div>
-
-
-        <div class="container" id="experiences">
-            <div class="wrapper">
-                <img src="/assets/about/yiting liu resume 2020_creative_technologist.png" alt="">
-            </div>
-        </div>
-
     </div>
+
+
+    <div class="container" id="experiences">
+        <div class="wrapper">
+            <img src="/assets/about/yiting liu resume 2020_creative_technologist.png" alt="">
+        </div>
+    </div>
+
+    <!-- </div> -->
 
     <br>
 
     <ul class="sideMenu">
-       
+
         <li><a href="#aboutIntro"> About</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#experiences">Resume</a></li>
 
     </ul>
- 
+
     <div class="icon-bar">
         <!-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  -->
         <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  -->
-        <a href="https://github.com/YitingLiu97" class="github"><i class="fa fa-github"></i></a> 
-        <a href="https://soundcloud.com/yitingliu" class="soundcloud"><i class="fa fa-soundcloud"></i></a> 
+        <a href="https://github.com/YitingLiu97" class="github"><i class="fa fa-github"></i></a>
+        <a href="https://soundcloud.com/yitingliu" class="soundcloud"><i class="fa fa-soundcloud"></i></a>
         <a href="https://www.linkedin.com/in/yitingliu97/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/channel/UC-qtm_PE55c-ToK37YoF6Vw?view_as=subscriber" class="youtube"><i class="fa fa-youtube"></i></a> 
-        <a href="https://www.instagram.com/yliu.designs/" class="instagram"><i class="fa fa-instagram"></i></a> 
+        <a href="https://www.youtube.com/channel/UC-qtm_PE55c-ToK37YoF6Vw?view_as=subscriber" class="youtube"><i
+                class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/yliu.designs/" class="instagram"><i class="fa fa-instagram"></i></a>
 
 
-      </div>
+    </div>
     <footer>Proudly created by Yiting Liu, a creative technologist with passion for food and music.</footer>
 </body>
 
