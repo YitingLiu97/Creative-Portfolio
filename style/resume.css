@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+#resume{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* display: flex; */
+    font-size: medium;
+    
+    
+
+}
+
+.university, .line{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* border: 1pt red solid; */
+
+}
+
+.date, .location, .gpa{
+    color: gray;
+    font-size: smaller;
+}
+
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 30px;
+    font-size: large;
+    color: mediumaquamarine;
+    border: mediumaquamarine 1pt double;
+    
+    
+}
+
+button:hover,button:active{
+    color: red;
+    border: red 1pt double;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .university, .line{
+        display: inline-block;
+    }
+
+    button{
+        width: 300px;
+        height: 30px;
+        font-size: medium;
+    }
+}

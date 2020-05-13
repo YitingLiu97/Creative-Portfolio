@@ -14,6 +14,9 @@
     bottom:0;
     z-index:-20;
 }
+
+
+
 body {
     font-size: x-large;
     display: block;
@@ -134,32 +137,40 @@ mark {
 
 .wrapperShow {
     background-color: black;
+    /* display: flex;
+    flex-flow: column wrap; */
+ 
 }
 
 .wrapperImg {
-    opacity: 0.7;
+    opacity: 0.6;
     width: 100%;
     margin: 0;
-    position: relative;
-    box-shadow: none;
+    /* position: relative; */
 }
 
 .wrapperImg:hover {
-    opacity: 0.5;
-    /* background-color: blue; */
+    
+    opacity: 0.3;
     filter: blur(3px);
     filter: drop-shadow(10px);
 }
 
 .textBlock {
+    /* border: 1pt black dotted; */
+    
+    /* background-color: black; */
     position: absolute;
     z-index: 5;
     bottom: 0;
     color: white;
     right: 0;
-    padding: 5%;
+    margin: auto;
+    /* padding: 5%; */
+    margin: 2% 5%;
     text-align: right;
     font-size: large;
+    width: 80%;
 }
 
 .projectLink {
@@ -352,7 +363,13 @@ img {
     color: white; */
   }
 
+
+
+
 @media only screen and (max-width: 800px) {
+    .textBlock h2{
+        color: darkblue;
+    }
     .sideMenu {
         width: 80px;
     }
@@ -403,6 +420,30 @@ img {
     .aboutIntro h2{
         font-size: medium;
     }
+
+
+    .wrapperShow {
+        background-color: white;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+    
+    .wrapperImg {
+        opacity: 1;
+        position: relative;
+        width: 100%;     
+    }
+    .textBlock {
+        opacity: 1;
+
+        position: relative;
+        width: 80%;
+        text-align: left;
+        color: black;
+        /* color: black; */
+       
+    }
 }
 
 /* tablet */
@@ -415,6 +456,9 @@ img {
     .aboutIntro h2{
         font-size: medium;
     }
+
+
+  
 
   }
   
