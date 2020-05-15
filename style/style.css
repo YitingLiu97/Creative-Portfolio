@@ -4,17 +4,20 @@
     font-family: Helvetica, Roboto, sans-serif;
 }
 
-#emojis{
+#emojis {
     position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     right: 0;
     top: 0;
-    bottom:0;
-    z-index:-20;
+    bottom: 0;
+    z-index: -20;
 }
 
+li, p {
+    font-size: x-large;
+}
 
 body {
     font-size: x-large;
@@ -25,18 +28,17 @@ body {
 h1, h2, h3, h4, h5, p {
     padding-top: 10px;
 }
-.aboutIntro h2{
-    font-size:xxx-large;
+
+.aboutIntro h2 {
+    font-size: xxx-large;
 }
 
 h1 {
     color: plum;
-
 }
 
 h2 {
     color: powderblue;
-    
 }
 
 h3 {
@@ -138,7 +140,6 @@ mark {
     background-color: black;
     /* display: flex;
     flex-flow: column wrap; */
- 
 }
 
 .wrapperImg {
@@ -149,7 +150,6 @@ mark {
 }
 
 .wrapperImg:hover {
-    
     opacity: 0.3;
     filter: blur(3px);
     filter: drop-shadow(10px);
@@ -157,7 +157,6 @@ mark {
 
 .textBlock {
     /* border: 1pt black dotted; */
-    
     /* background-color: black; */
     position: absolute;
     z-index: 5;
@@ -227,9 +226,9 @@ footer {
 .gallery img, .gallery iframe {
     /* margin: auto; */
     padding: 1%;
-    height: 300px;
+    height: 280px;
     width: auto;
-    /* border-image-slice: fill; */
+    /* border: 1pt red dotted; */
 }
 
 img {
@@ -238,13 +237,13 @@ img {
     margin: auto;
 }
 
-#aboutIntro img{
+#aboutIntro img {
     height: 200px;
     width: auto;
     /* display: float; */
     display: block;
-    
 }
+
 .video {
     /* border: 1pt yellow dotted; */
     border-radius: 5px;
@@ -255,7 +254,8 @@ img {
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     height: 0;
     margin-bottom: 20px;
 }
@@ -295,78 +295,76 @@ img {
     background-color: blanchedalmond;
 }
 
-
 .icon-bar {
     position: fixed;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
-  
-  .icon-bar a {
+}
+
+.icon-bar a {
     display: block;
     text-align: center;
     padding: 16px;
     transition: all 0.3s ease;
     /* color: white; */
     font-size: 20px;
-  }
-  
-  .icon-bar a:hover {
+}
+
+.icon-bar a:hover {
     background-color: pink;
-  }
+}
 
-  #myBtnContainer{
-      overflow: hidden;
-    
-  
+#myBtnContainer {
+    overflow: hidden;
+}
 
-  }
-  /* for the filter section in index */
-  .filterDiv {
-    display: none;     /* Hidden by default */
-     
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
+/* for the filter section in index */
+
+.filterDiv {
+    display: none;
+    /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+
+.show {
     display: block;
-  
-  }
-  
-  /* Style the buttons */
-  .btn {
-      /* border: none; */
-      font-size: large;
-      /* color: red; */
-      border: none;
-      outline: none;
-      /* border-bottom: lightcoral 1pt dotted; */
+}
+
+/* Style the buttons */
+
+.btn {
+    /* border: none; */
+    font-size: large;
+    /* color: red; */
+    border: none;
+    outline: none;
+    /* border-bottom: lightcoral 1pt dotted; */
     padding: 12px 16px;
     background-color: white;
     /* background-color: #f1f1f1; */
     cursor: pointer;
-  }
-  
-  /* Add a light grey background on mouse-over */
-  .btn:hover {
+}
+
+/* Add a light grey background on mouse-over */
+
+.btn:hover {
     /* background-color: lightcoral; */
     color: lightcoral;
-  }
-  
-  /* Add a dark background to the active button */
-  .btn.active {
+}
+
+/* Add a dark background to the active button */
+
+.btn.active {
     color: lightcoral;
     /* opacity: 0.4;
     color: white; */
-  }
-
-
-
+}
 
 @media only screen and (max-width: 800px) {
-    .textBlock h2{
+    .textBlock h2 {
         color: darkblue;
     }
     .sideMenu {
@@ -390,74 +388,56 @@ img {
         font-size: x-small;
     }
     .icon-bar {
-        /* size: 80%; */
         display: flex;
-        /* flex-flow: row wrap; */
-        /* width: 60%; */
         margin: auto;
-        position: relative; 
+        position: relative;
         justify-content: center;
         bottom: 0em;
         /* top: 90%; */
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-      }
-      .gallery img, .gallery iframe {
-        /* width: 100%; */
+    }
+    .gallery img, .gallery iframe {
         width: auto;
         height: 200px;
-        /* height: 200px; */
-      }
-      h1, h2, h3, h4, h5, p {
-        font-size: medium;
-        /* padding-top: 10px; */
     }
-    body{
-        font-size: large;
-    }
-    .aboutIntro h2{
+    h1, h2, h3, h4, h5, p {
         font-size: medium;
     }
-
-
+    /* .aboutIntro h2{
+        font-size: medium;
+    } */
     .wrapperShow {
         background-color: white;
         display: flex;
         flex-flow: column wrap;
-        
     }
-    
     .wrapperImg {
         opacity: 1;
         position: relative;
-        width: 100%;     
+        width: 100%;
     }
     .textBlock {
         opacity: 1;
-
         position: relative;
         width: 80%;
         text-align: left;
         color: black;
         /* color: black; */
-       
     }
 }
 
 /* tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-  
 
+@media (min-width: 768px) and (max-width: 1024px) {
     footer {
         font-size: x-small;
     }
-    .aboutIntro h2{
+    .aboutIntro h2 {
         font-size: medium;
     }
-
-
-  
-
-  }
-  
+    li, p {
+        font-size: medium;
+    }
+}

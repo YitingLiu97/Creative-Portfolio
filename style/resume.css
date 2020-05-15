@@ -6,11 +6,16 @@
 
 #resume{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* display: flex; */
-    font-size: medium;
     
-    
+}
 
+li {
+    font-size: large;
+    padding: 5px 0;
+}
+
+p,em{
+    font-size: x-large;
 }
 
 .university, .line{
@@ -18,11 +23,10 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    /* border: 1pt red solid; */
 
 }
 
-.date, .location, .gpa{
+.date p, .location p, .gpa p{
     color: gray;
     font-size: smaller;
 }
@@ -32,10 +36,11 @@ button {
     display: block;
     margin: 0 auto;
     width: 300px;
-    height: 30px;
-    font-size: large;
+    height: px;
+    /* font-size: large; */
     color: mediumaquamarine;
     border: mediumaquamarine 1pt double;
+    font-size: x-large;
     
     
 }
@@ -43,6 +48,7 @@ button {
 button:hover,button:active{
     color: red;
     border: red 1pt double;
+
 }
 
 
@@ -57,5 +63,15 @@ button:hover,button:active{
         width: 300px;
         height: 30px;
         font-size: medium;
+    }
+
+    h2,h3,h4,h5{
+        font-size: smaller;
+    }
+    p,em,li{
+        font-size: medium;
+    }
+    .date p, .location p, .gpa p{
+        font-size: small;
     }
 }
