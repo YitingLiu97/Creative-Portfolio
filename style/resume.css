@@ -10,13 +10,14 @@
 }
 
 li {
-    font-size: large;
+    font-size: medium;
     padding: 5px 0;
 }
 
 p,em{
-    font-size: x-large;
+    font-size: large;
 }
+
 
 .university, .line{
     display: flex;
@@ -28,7 +29,14 @@ p,em{
 
 .date p, .location p, .gpa p{
     color: gray;
-    font-size: smaller;
+    /* font-size: smaller; */
+    text-align: right;
+}
+.normalLink{
+    color: red;
+    text-decoration: underline;
+    font-style: italic;
+
 }
 
 
@@ -37,17 +45,18 @@ button {
     margin: 0 auto;
     width: 300px;
     height: px;
-    /* font-size: large; */
-    color: mediumaquamarine;
-    border: mediumaquamarine 1pt double;
+    color: red;
+    border: none;
+    background-color: white;
     font-size: x-large;
     
     
 }
 
 button:hover,button:active{
-    color: red;
-    border: red 1pt double;
+    color: white;
+    background-color: red;
+    cursor: pointer;
 
 }
 
@@ -71,7 +80,8 @@ button:hover,button:active{
     p,em,li{
         font-size: medium;
     }
-    .date p, .location p, .gpa p{
+    .date p, .location p, .gpa p, .normalLink{
         font-size: small;
+        text-align: left;
     }
 }
