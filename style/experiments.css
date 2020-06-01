@@ -1,0 +1,41 @@
+.inline{
+    display: flex;
+    flex-direction: row;
+
+}
+.inline p{
+ padding-right: 20px;
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .inline{
+        display: block;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery iframe{
+       height: 100px;
+       width: auto;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .inline{
+        display: block;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery iframe{
+        height: 80px;
+     }
+}
