@@ -76,7 +76,7 @@ mark:hover {
     /* background-color: #ccffff;
     box-shadow: lightpink 30px 10px; */
     background-color: red;
-    box-shadow: pink 30px 10px;
+    box-shadow: pink 20px 10px;
     margin-bottom: 20px;
 }
 
@@ -296,20 +296,20 @@ img {
     height: 100%;
 }
 
+/* vertical videos, video gallery */
 .videoGallery {
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
 }
 
-/* vertical iframe */
-
 .videoWrappervertical {
-    margin: 10px 20px;
+    margin: 20px auto;
+    padding: 0 10px;
     width: 300px;
     flex-flow: row;
     text-align: center;
     /* border: 1pt black dotted; */
-
 
 }
 
@@ -327,15 +327,10 @@ img {
 
 .videoWrappervertical iframe {
     /* border: 1pt black dotted; */
-
-    /* position: absolute; */
     position: relative;
     width: auto;
-    /* width: 40%; */
-    /* width: 40%; */
     height: 500px;
-    /* padding: 0 20px; */
-    /* margin: auto; */
+
 }
 
 .chart {
@@ -494,26 +489,17 @@ img {
         width: 80%;
         text-align: left;
         color: black;
-        /* color: black; */
     }
 
     .videoWrappervertical {
-        margin: 10px 20px;
         height: 100%;
-        
-        /* width: 300px; */
-        /* flex-flow: row; */
+        margin: 20px auto;
+        padding-bottom: 20px;
+
     }
     
     .videoWrappervertical iframe {
-        /* position: absolute; */
-        position: relative;
-        width: auto;
-        /* width: 40%; */
-        /* width: 40%; */
-        height: 500px;
-        padding: 0 20px;
-        /* margin: auto; */
+        height: 500px;    
     }
 
 }
