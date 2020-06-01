@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     funpart();
     // Add active class to the current control button (highlight it)
-
+// hide();
 
     filterSelection('all');
     var btnContainer = document.getElementById("myBtnContainer");
@@ -23,13 +23,6 @@ function funpart() {
     // document.addEventListener('mouseover', mousePos(event));
     document.addEventListener('keypress', randomEmoji);
 }
-
-// function mousePos(e){
-//     let x= e.x;
-//     let y=e.y;
-//     console.log(x,y);
-
-// }
 
 function randomEmoji(e) {
     let xy = randomLocation();
@@ -103,6 +96,19 @@ function randomLocation() {
 // // console.log()
 
 // }
+
+// function hide(){
+
+// if(document.getElementById("welcome").style.opacity==0){
+
+//     document.getElementsByClassName("mydiv").style.display="none";
+// }
+//     let zINDEX= document.getElementsByClassName("mydiv").zIndex;
+//     if (zINDEX==20){
+//         zINDEX=0;
+//         }
+// }
+
 
 function filterSelection(c) {
     var x, i;

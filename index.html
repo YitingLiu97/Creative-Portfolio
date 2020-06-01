@@ -7,6 +7,7 @@
     <title>Yiting Liu's Portfolio - Creative Technologist </title>
     <meta name="description" content="This is Yiting's playground of creative technology in the realm of food, music, and performances.
     Yiting is a maker, coder, and a marketer. ">
+    <!-- <link rel="stylesheet" href="style/welcome.css"> -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../sketches/aboutIntro.js"></script>
@@ -16,17 +17,36 @@
 
 <body>
 
+    <!-- <div class="mydiv">
+        <div id="welcome">
+
+            <h1> Come to Yiting Liu's creative wonderland and play!</h1>
+            <img src="/assets/about/Yiting Liu Logo-10.png" alt="Yiting Liu's Logo">
+
+
+        </div>
+    </div> -->
+
+
     <div id="emojis"></div>
 
     <div class="topnav">
-        <a class="element" class="active" href="index.html"><p> Work</p></a>
-        <a class="element" href="/experiments/experiments.html"> <p> Experiments</p></a>
-        <a class="element" href="about.html">  <p>About</p></a>
-        <a class="element" href="http://yitingliu97.wordpress.com/"><p>Classes</p></a>
+        <a class="element" class="active" href="index.html">
+            <p> Work</p>
+        </a>
+        <a class="element" href="/experiments/experiments.html">
+            <p> Experiments</p>
+        </a>
+        <a class="element" href="about.html">
+            <p>About</p>
+        </a>
+        <a class="element" href="http://yitingliu97.wordpress.com/">
+            <p>Classes</p>
+        </a>
     </div>
 
-   
-  
+
+
     <div id="about">
         <div class="container">
             <div class="wrapper">
@@ -34,146 +54,187 @@
                 <br><br>
                 <div id="aboutIntro">
                     <div>
-                    <h2>Hi, Yiting here!</h2>
+                        <h2>Hi, Yiting here!</h2>
 
-                    <!-- <img src="./assets//about/profilepic2.jpg" alt=""> -->
-                    <!-- create a moving tile pattern of images in between here -->
+                        <!-- <img src="./assets//about/profilepic2.jpg" alt=""> -->
+                        <!-- create a moving tile pattern of images in between here -->
 
-                    <!-- add gif of my photos? -->
-                    <br>
-                    <h2> I am a <mark>creative technologist </mark> designing experiences to
-                        foster meaningful interactions
-                        through <mark>food</mark>, <mark>music</mark>, and <mark> performance</mark>.
-                    </h2>
-                </div>
-                <!-- <img src="" alt=""> -->
+                        <!-- add gif of my photos? -->
+                        <br>
+                        <h2> I am a <mark>creative technologist </mark> designing experiences to
+                            foster meaningful interactions
+                            through <mark>AR/VR</mark>, <mark>music</mark>, and <mark> performance</mark>.
+                        </h2>
+                    </div>
+                    <!-- <img src="" alt=""> -->
                     <br><br>
                 </div>
             </div>
         </div>
 
-    <div id="work" class="projectGallery">
-        <div class="container">
-            <div class="wrapper">
+        <div id="work" class="projectGallery">
+            <div class="container">
+                <div class="wrapper">
 
-                <!-- <a href="#work">
+                    <!-- <a href="#work">
                     <h2> <strong style="border-bottom:1pt double lightcoral">WORK</strong></h2>
                 </a> -->
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="wrapper">
-                <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> <p> Show all</p></button>
-                    <button class="btn" onclick="filterSelection('pcomp')"> <p>Physical Computing</p></button>
-                    <button class="btn" onclick="filterSelection('fab')">  <p>Fabrication</p></button>
-                    <button class="btn" onclick="filterSelection('web')"> <p> Web Application</p></button>
-                    <button class="btn" onclick="filterSelection('videoSculpture')"> <p>Video Sculpture</p></button>
-                    <button class="btn" onclick="filterSelection('music')">  <p>Music</p></button>
-                    <button class="btn" onclick="filterSelection('product')">  <p>Product Design</p></button>
-
                 </div>
             </div>
-        </div>
 
-        <a class="filterDiv videoSculpture" class="projectLink" href="work/toilet-paper-mania.html">
             <div class="container">
                 <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>Interactive VR Experience </h4>
-                            <h2>Toilet Paper Mania - Immersive VR Museum</h2>
-                            <p>A virtual experience that invites people to relive, rethink, and reflect their responses/ their change of behaviors towards the toilet paper mania during COVID-19.
-                            </p>
-                            <p> Skills: Blender and Unity </p>
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')">
+                            <p> Show all</p>
+                        </button>
+                        <button class="btn" onclick="filterSelection('pcomp')">
+                            <p>Physical Computing</p>
+                        </button>
+                        <button class="btn" onclick="filterSelection('fab')">
+                            <p>Fabrication</p>
+                        </button>
+                        <button class="btn" onclick="filterSelection('web')">
+                            <p> Web Application</p>
+                        </button>
+                        <button class="btn" onclick="filterSelection('videoSculpture')">
+                            <p>Video Sculpture</p>
+                        </button>
+                        <button class="btn" onclick="filterSelection('vr/ar')">
+                            <p>VR/AR</p>
+                        </button>
+                        <button class="btn" onclick="filterSelection('3d')">
+                            <p>3D</p>
+                        </button>
 
-                        </div>
-                       <div><img class="wrapperImg" src="assets/toilet-paper-mania-demo/demo.png" alt=""></div> 
-                    </div>
+                        <button class="btn" onclick="filterSelection('music')">
+                            <p>Music</p>
+                        </button>
+                        <button class="btn" onclick="filterSelection('product')">
+                            <p>Product Design</p>
+                        </button>
 
-                </div>
-            </div>
-        </a>
-
-    
-
-
-        <a class="filterDiv web" class="projectLink" href="work/audio-diary.html">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>UX, UI, Web </h4>
-                            <h2>Audio Diary - Front-End Web</h2>
-                            <p>Talk about your feelings to get through hard times.
-                            </p>
-                            <p> Tools: Front-End,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech</p>
-                        </div>
-                        <img class="wrapperImg" src="assets/audio-diary/demo3.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </a>
-
-        <a class="filterDiv web" class="projectLink" href="work/mood-for-food.html">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>UX, UI, Interaction Design, Fullstack Web </h4>
-                            <h2>Mood for Food - Fullstack Web</h2>
-                            <p>A website offers food options based on user emotions.</p>
-
-                            <p> Tools: HTML5, CSS, Javascript, Node.js, Database, MongoDB, Github, Heroku</p>
-                        </div>
-                        <img class="wrapperImg" src="assets/mood-for-food/moodforfood_emoji.gif" alt="">
                     </div>
                 </div>
             </div>
-        </a>
 
-        
-        <a class="filterDiv pcomp fab product" class="projectLink" href="work/dance-of-the-rain.html">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>Installation </h4>
-                            <h2>Dance of the Rain - Light Visualization</h2>
-                            <p>A light visualization of historical rain data of cities around the globe.
-                            </p>
-                            <p> Skills: Arduino, Wifi, HTTP request, JSON parsing, API </p>
+            <a class="filterDiv vr/ar 3d" class="projectLink" href="work/ar-filters.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>AR, 3D Model, 100 days</h4>
+                                <h2>Extensions of Ourselves - AR Filters</h2>
+                                <p>Addressing identity issues in society through 100 days of exploring on Spark AR platform. 
+                                </p>
+                                <p> Skills: Spark AR, Blender, and Unity </p>
+
+                            </div>
+                            <div><img class="wrapperImg" src="assets/AR-filters/ar filter demo.jpg" alt=""></div>
                         </div>
-                       <div><img class="wrapperImg" src="assets/dance-of-the-rain/demo2.jpg" alt=""></div> 
+
                     </div>
-
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <a class="filterDiv pcomp fab music" class="projectLink" href="work/forest-of-sounds.html">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="wrapperShow">
-                        <div class="textBlock">
-                            <h4>Interactive Exhibition, Generative Music </h4>
-                            <h2>Forest of Sounds -  Interactive Music Exhibition</h2>
-                            <p>An interactive music installation that reinterprets the daily mundane sounds.
-                            </p>
-                            <p> Skills: Kinect, Max/Msp, Max for Live, Ableton, Composing </p>
+            <a class="filterDiv videoSculpture vr/ar 3d" class="projectLink" href="work/toilet-paper-mania.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>Interactive VR Experience </h4>
+                                <h2>Toilet Paper Mania - Immersive VR Museum</h2>
+                                <p>A virtual experience that invites people to relive, rethink, and reflect their
+                                    responses/ their change of behaviors towards the toilet paper mania during COVID-19.
+                                </p>
+                                <p> Skills: Blender and Unity </p>
+
+                            </div>
+                            <div><img class="wrapperImg" src="assets/toilet-paper-mania-demo/demo.png" alt=""></div>
                         </div>
-                       <div><img class="wrapperImg" src="assets/forest-of-sounds/profilepic.png" alt=""></div> 
+
                     </div>
-
                 </div>
-            </div>
-        </a>
+            </a>
 
-    
 
-     
+
+
+            <a class="filterDiv web" class="projectLink" href="work/audio-diary.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>UX, UI, Web </h4>
+                                <h2>Audio Diary - Front-End Web</h2>
+                                <p>Talk about your feelings to get through hard times.
+                                </p>
+                                <p> Tools: Front-End,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech</p>
+                            </div>
+                            <img class="wrapperImg" src="assets/audio-diary/demo3.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+            <a class="filterDiv web" class="projectLink" href="work/mood-for-food.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>UX, UI, Interaction Design, Fullstack Web </h4>
+                                <h2>Mood for Food - Fullstack Web</h2>
+                                <p>A website offers food options based on user emotions.</p>
+
+                                <p> Tools: HTML5, CSS, Javascript, Node.js, Database, MongoDB, Github, Heroku</p>
+                            </div>
+                            <img class="wrapperImg" src="assets/mood-for-food/moodforfood_emoji.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <a class="filterDiv pcomp fab product" class="projectLink" href="work/dance-of-the-rain.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>Installation </h4>
+                                <h2>Dance of the Rain - Light Visualization</h2>
+                                <p>A light visualization of historical rain data of cities around the globe.
+                                </p>
+                                <p> Skills: Arduino, Wifi, HTTP request, JSON parsing, API </p>
+                            </div>
+                            <div><img class="wrapperImg" src="assets/dance-of-the-rain/demo2.jpg" alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+            <a class="filterDiv pcomp fab music" class="projectLink" href="work/forest-of-sounds.html">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapperShow">
+                            <div class="textBlock">
+                                <h4>Interactive Exhibition, Generative Music </h4>
+                                <h2>Forest of Sounds - Interactive Music Exhibition</h2>
+                                <p>An interactive music installation that reinterprets the daily mundane sounds.
+                                </p>
+                                <p> Skills: Kinect, Max/Msp, Max for Live, Ableton, Composing </p>
+                            </div>
+                            <div><img class="wrapperImg" src="assets/forest-of-sounds/profilepic.png" alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+
+
+
 
             <a class="filterDiv product pcomp fab" class="projectLink" href="work/zeal.html">
                 <div class="container">
@@ -204,11 +265,12 @@
                                 <p>An audiovisual performance echoing the feeling of voidness and the draining of energy
                                     while living through the COVID-19. </p>
                                 <p> Created under 6 hours for PerformaJam LIVE - CultureHub and Adjacent Jounral. </p>
-    
+
                             </div>
-                           <div><img class="wrapperImg" src="assets/performajam-everyday/performajam_title.jpeg" alt=""></div> 
+                            <div><img class="wrapperImg" src="assets/performajam-everyday/performajam_title.jpeg"
+                                    alt=""></div>
                         </div>
-    
+
                     </div>
                 </div>
             </a>
@@ -269,23 +331,24 @@
                     </div>
                 </div>
             </a>
-    </div>
+        </div>
 
-    <br><br><br><br>
+        <br><br><br><br>
 
-    <div class="icon-bar">
-        <!-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  -->
-        <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  -->
-        <a href="https://github.com/YitingLiu97" class="github"><i class="fa fa-github"></i></a>
-        <a href="https://soundcloud.com/yitingliu" class="soundcloud"><i class="fa fa-soundcloud"></i></a>
-        <a href="https://www.linkedin.com/in/yitingliu97/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/channel/UC-qtm_PE55c-ToK37YoF6Vw?view_as=subscriber" class="youtube"><i
-                class="fa fa-youtube"></i></a>
-        <a href="https://www.instagram.com/yliu.designs/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <div class="icon-bar">
+            <!-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  -->
+            <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  -->
+            <a href="https://github.com/YitingLiu97" class="github"><i class="fa fa-github"></i></a>
+            <a href="https://soundcloud.com/yitingliu" class="soundcloud"><i class="fa fa-soundcloud"></i></a>
+            <a href="https://www.linkedin.com/in/yitingliu97/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC-qtm_PE55c-ToK37YoF6Vw?view_as=subscriber" class="youtube"><i
+                    class="fa fa-youtube"></i></a>
+            <a href="https://www.instagram.com/yliu.designs/" class="instagram"><i class="fa fa-instagram"></i></a>
 
 
-    </div>
-    <footer>Proudly created by Yiting Liu, a creative technologist with passion for food and music.</footer>
+        </div>
+
+        <footer>Proudly created by Yiting Liu, a creative technologist with passion for food and music.</footer>
 </body>
 
 </html>

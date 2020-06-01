@@ -45,23 +45,30 @@ p,em{
 button {
     display: block;
     margin: 0 auto;
-    width: 300px;
-    height: px;
+    /* width: 300px; */
+    width: 40%;
+    height: 40px;
     color: red;
     border: none;
     background-color: white;
-    font-size: x-large;
-    
+    font-size: large;
+    outline: 0 !important;
+    border-bottom: 2pt black double;
+    border-radius: 5px;
+
     
 }
 
-button:hover,button:active{
+button:hover{
     color: white;
     background-color: red;
     cursor: pointer;
 
 }
 
+button:active{
+    color: black;
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -71,8 +78,8 @@ button:hover,button:active{
     }
 
     button{
-        width: 300px;
-        height: 30px;
+        /* width: 300px;
+        height: 30px; */
         font-size: medium;
     }
 
