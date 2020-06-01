@@ -64,16 +64,14 @@ mark:hover {
 }
 
 .sideMenu {
-    text-align: right;
+    /* text-align: right; */
     z-index: 1000;
     position: fixed;
     margin: auto;
     right: 0;
     top: 40%;
     width: 100px;
-    /* border-top: blanchedalmond 1pt double; */
     background-color: white;
-    /* box-shadow: blanchedalmond -10px 10px; */
     padding-left: 20px;
 }
 
@@ -82,6 +80,7 @@ mark:hover {
     margin: 10% 0;
     padding-right: 20px;
     font-size: medium;
+
 }
 
 .element {
@@ -231,11 +230,9 @@ footer {
 .gallery p {
     margin: auto;
     text-align: center;
-    border-bottom-style: double;
     opacity: 0.7;
     color: black;
-    width: fit-content;
-    /* padding: 3px 10px; */
+    /* width: fit-content; */
 }
 
 .gallery img, .gallery iframe {
@@ -243,7 +240,6 @@ footer {
     padding: 1%;
     height: 280px;
     width: auto;
-    /* border: 1pt red dotted; */
 }
 
 img {
