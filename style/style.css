@@ -258,7 +258,7 @@ footer {
     /* height: 280px;
     width: auto; */
 
-    width: 45%;
+    /* width: 45%; */
     height: auto;
 }
 
@@ -456,8 +456,9 @@ img {
         transform: translateY(-50%);
     }
     .gallery img, .gallery iframe {
-        width: 45%;
-        height: auto;
+        
+        /* width: 45%; */
+        /* height: auto; */
         /* height: 200px; */
     }
     h1, h2 {
