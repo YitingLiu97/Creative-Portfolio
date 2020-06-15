@@ -9,11 +9,13 @@
 }
 
 
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .inline{
         display: block;
     }
     .gallery{
+  
         display: flex;
         flex-direction: column;
     }
@@ -33,9 +35,11 @@
     }
     .gallery{
         display: flex;
-        flex-direction: column;
+        /* margin: auto; */
+        /* flex-direction: column; */
     }
     .gallery iframe{
-        height: 80px;
-     }
+      margin: auto;
+    }
+   
 }

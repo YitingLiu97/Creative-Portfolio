@@ -257,9 +257,8 @@ footer {
     padding: 1%;
     /* height: 280px;
     width: auto; */
-
-    /* width: 45%; */
-    height: auto;
+    width: 45%;
+    /* height: auto; */
 }
 
 img {
