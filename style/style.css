@@ -139,11 +139,13 @@ mark:hover {
 
 .wrapperShow {
     background-color: red;
+
 }
 
 .wrapperImg {
     width: 100%;
     margin: 0;
+
 }
 
 .wrapperImg:hover {
@@ -157,6 +159,7 @@ mark:hover {
     /* background-color: black; */
     position: absolute;
     z-index: 5;
+    /* right: 0; */
     bottom: 0;
     color: white;
     right: 0;
@@ -253,12 +256,8 @@ footer {
 }
 
 .gallery img, .gallery iframe {
-    /* margin: auto; */
     padding: 1%;
-    /* height: 280px;
-    width: auto; */
     width: 45%;
-    /* height: auto; */
 }
 
 img {
@@ -454,12 +453,7 @@ img {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-    .gallery img, .gallery iframe {
-        
-        /* width: 45%; */
-        /* height: auto; */
-        /* height: 200px; */
-    }
+
     h1, h2 {
         font-size: large;
     }
