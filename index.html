@@ -13,7 +13,7 @@ search bar  -->
 
 
 <head>
-   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yiting Liu's Portfolio - Creative Technologist </title>
@@ -29,7 +29,7 @@ search bar  -->
 
     <meta property='og:title' content='Yiting Liu - Creative Technologist Portfolio' />
     <meta property='og:image' content='https://yitingliu.com/assets/AR-filters/ar-filter-demo.jpg' />
-    <meta property='og:description' content='Focused, Enthusiastic & Self-motivated.'/>
+    <meta property='og:description' content='Focused, Enthusiastic & Self-motivated.' />
     <meta property='og:url' content='https://yitingliu.com' />
 
     <meta property="og:author" content="Yiting Liu">
@@ -39,7 +39,7 @@ search bar  -->
 
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168641112-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -51,7 +51,12 @@ search bar  -->
 
         gtag('config', 'UA-168641112-1');
     </script>
+
+    <script>
+
+    </script>
     <script src="../sketches/aboutIntro.js"></script>
+    <script src="../sketches/directToNewPortfolio.js"></script>
     <script src="../sketches/bubbles.js"></script>
 </head>
 
@@ -60,7 +65,7 @@ search bar  -->
 
     <div id="emojis"></div>
 
-    <div class="topnav">
+    <div id="tabs" class="topnav">
         <a class="element" class="active" href="index.html">
             <p> Work</p>
         </a>
@@ -77,297 +82,317 @@ search bar  -->
 
     <br><br>
 
-    <div id="about">
+
+    <div id="newPortfolioPopUp">
         <div class="container">
             <div class="wrapper">
-                <!-- build a sketch? -->
-                <div id="aboutIntro" class="gallery">
+                <p>Oh, you found Yiting's Version One Portfolio. </p>
+                <h1> Check Out <a href="https://www.yitingliu.com">Yiting's Current Portfolio</a>.
+                </h1>
+                <p>P.S.: Proceed if you want to check out the OG portfolio.;)</p>
 
-                    <h2>Hi, Yiting here!
-
-                        <!-- create a moving tile pattern of images in between here -->
-
-
-                        <br><br> I am a <mark>creative technologist </mark> designing experiences to
-                        foster meaningful interactions
-                        through <mark>AR/VR</mark>, <mark>music</mark>, and <mark> performance</mark>.
-                    </h2>
-
-                    <br>
-                    <!-- <img src="./assets//about/profilepic2.jpg" alt=""> -->
-
-                    <!-- <img src="" alt=""> -->
-
-                </div>
+                <button type="button" id="ShowOldInfo" class="btn" >Have a Peek</button>
             </div>
         </div>
+    </div>
 
-        <div id="work" class="projectGallery">
+
+    <div id="oldInfo">
+        <div id="about">
             <div class="container">
                 <div class="wrapper">
+                    <!-- build a sketch? -->
+                    <div id="aboutIntro" class="gallery">
 
-                    <!-- <a href="#work">
+                        <h2>Hi, Yiting here!
+
+                            <!-- create a moving tile pattern of images in between here -->
+
+
+                            <br><br> I am a <mark>creative technologist </mark> designing experiences to
+                            foster meaningful interactions
+                            through <mark>AR/VR</mark>, <mark>music</mark>, and <mark> performance</mark>.
+                        </h2>
+
+                        <br>
+                        <!-- <img src="./assets//about/profilepic2.jpg" alt=""> -->
+
+                        <!-- <img src="" alt=""> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="work" class="projectGallery">
+                <div class="container">
+                    <div class="wrapper">
+
+                        <!-- <a href="#work">
                     <h2> <strong style="border-bottom:1pt double lightcoral">WORK</strong></h2>
                 </a> -->
+                    </div>
                 </div>
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div id="myBtnContainer">
+                            <button class="btn active" onclick="filterSelection('all')">
+                                <p> Show all</p>
+                            </button>
+                            <button class="btn" onclick="filterSelection('pcomp')">
+                                <p>Physical Computing</p>
+                            </button>
+                            <button class="btn" onclick="filterSelection('fab')">
+                                <p>Fabrication</p>
+                            </button>
+                            <button class="btn" onclick="filterSelection('web')">
+                                <p> Web Application</p>
+                            </button>
+                            <button class="btn" onclick="filterSelection('videoSculpture')">
+                                <p>Video Sculpture</p>
+                            </button>
+                            <button class="btn" onclick="filterSelection('vr/ar')">
+                                <p>VR/AR</p>
+                            </button>
+                            <button class="btn" onclick="filterSelection('3d')">
+                                <p>3D</p>
+                            </button>
+
+                            <button class="btn" onclick="filterSelection('music')">
+                                <p>Music</p>
+                            </button>
+                            <button class="btn" onclick="filterSelection('product')">
+                                <p>Product Design</p>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <a class="filterDiv vr/ar 3d" class="projectLink" href="work/ar-filters.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>AR, 3D Model, 100 days</h4>
+                                    <h2>Extensions of Ourselves - AR Filters</h2>
+                                    <p>Addressing identity issues in society through 100 days of exploring on Spark AR
+                                        platform.
+                                    </p>
+                                    <p> Skills: Spark AR, Blender, and Unity </p>
+
+                                </div>
+                                <div><img class="wrapperImg" src="assets/AR-filters/ar-filter-demo.jpg" alt=""></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a class="filterDiv videoSculpture vr/ar 3d" class="projectLink" href="work/toilet-paper-mania.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>Interactive VR Experience </h4>
+                                    <h2>Toilet Paper Mania - Immersive VR Museum</h2>
+                                    <p>A virtual experience that invites people to relive, rethink, and reflect their
+                                        responses/ their change of behaviors towards the toilet paper mania during
+                                        COVID-19.
+                                    </p>
+                                    <p> Skills: Blender and Unity </p>
+
+                                </div>
+                                <div><img class="wrapperImg" src="assets/toilet-paper-mania-demo/demo.png" alt=""></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+
+
+
+                <a class="filterDiv web" class="projectLink" href="work/audio-diary.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>UX, UI, Web </h4>
+                                    <h2>Audio Diary - Front-End Web</h2>
+                                    <p>Talk about your feelings to get through hard times.
+                                    </p>
+                                    <p> Tools: Front-End,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech</p>
+                                </div>
+                                <img class="wrapperImg" src="assets/audio-diary/demo3.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a class="filterDiv web" class="projectLink" href="work/mood-for-food.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>UX, UI, Interaction Design, Fullstack Web </h4>
+                                    <h2>Mood for Food - Fullstack Web</h2>
+                                    <p>A website offers food options based on user emotions.</p>
+
+                                    <p> Tools: HTML5, CSS, Javascript, Node.js, Database, MongoDB, Github, Heroku</p>
+                                </div>
+                                <img class="wrapperImg" src="/assets/mood-for-food/moodforfood_emoji.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a class="filterDiv pcomp fab product" class="projectLink" href="work/dance-of-the-rain.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>Installation </h4>
+                                    <h2>Dance of the Rain - Light Visualization</h2>
+                                    <p>A light visualization of historical rain data of cities around the globe.
+                                    </p>
+                                    <p> Skills: Arduino, Wifi, HTTP request, JSON parsing, API </p>
+                                </div>
+                                <img class="wrapperImg" src="/assets/dance-of-the-rain/demo1.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+
+                <a class="filterDiv pcomp fab music" class="projectLink" href="work/forest-of-sounds.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>Interactive Exhibition, Generative Music </h4>
+                                    <h2>Forest of Sounds - Interactive Music Exhibition</h2>
+                                    <p>An interactive music installation that reinterprets the daily mundane sounds.
+                                    </p>
+                                    <p> Skills: Kinect, Max/Msp, Max for Live, Ableton, Composing </p>
+                                </div>
+                                <div><img class="wrapperImg" src="/assets/forest-of-sounds/demo1.png" alt=""></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+
+
+
+
+                <a class="filterDiv product pcomp fab" class="projectLink" href="work/zeal.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>Product Design, Wearable Tech </h4>
+                                    <h2>Zeal - Product Design</h2>
+                                    <p>A personal Apple watch band that keeps you warm in the cold.
+                                    </p>
+                                    <p>Skills: Design Research, Market Analysis, Fabrication, Art Direction </p>
+
+                                </div>
+                                <img class="wrapperImg" src="assets/product-design-zeal/looks-like-demo.jpeg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a class="filterDiv music" class="projectLink" href="work/everyday.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>Live Performance, Music, Art </h4>
+                                    <h2>A Day, Any Day, Everyday - Live Performance</h2>
+                                    <p>An audiovisual performance echoing the feeling of voidness and the draining of
+                                        energy
+                                        while living through the COVID-19. </p>
+                                    <p> Created under 6 hours for PerformaJam LIVE - CultureHub and Adjacent Jounral.
+                                    </p>
+
+                                </div>
+                                <div><img class="wrapperImg" src="assets/performajam-everyday/performajam_title.jpeg"
+                                        alt=""></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a class="filterDiv pcomp product fab" class="projectLink" href="work/authentic-or-not.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>UX, UI, Interaction Design, & Product Design </h4>
+                                    <h2>Authentic or Not - Interactive Cooking Game</h2>
+                                    <p>An interactive game to learn recipes visually.
+                                    </p>
+                                    <p> Skills: Fabrication, Physical Computing, Creative Coding</p>
+                                </div>
+                                <img class="wrapperImg" src="assets/authentic-or-not/authenticornot-demo.jpeg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a class="filterDiv pcomp fab videoSculpture" class="projectLink" href="work/double-date.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>Experience Design & Interaction Design </h4>
+                                    <h2>Double Date - Video Sculpture</h2>
+                                    <p> An interactive video sculpture exploring the relationships between humans and
+                                        phones. </p>
+                                    <p> Tools: Arduino, Sprite, Projector, Laser-Cutter, After Effects, Premiere,
+                                        Illustrator
+                                    </p>
+                                </div>
+                                <img class="wrapperImg" src="assets/double-date/presentation.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+
+                <a class="filterDiv videoSculpture" class="projectLink" href="work/all-connecting.html">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="wrapperShow">
+                                <div class="textBlock">
+                                    <h4>Experience, Interaction Design, & Performance </h4>
+                                    <h2>All Connecting - Video Sculpture</h2>
+                                    <p>An interactive video sculpture that exposes the systems of the Internet in
+                                        real-time.
+                                    </p>
+                                    <p> Skills: Projection mapping, MadMapper, Processing, Syphon Recorder, Real-Time
+                                        Performance</p>
+                                </div>
+                                <img class="wrapperImg" src="assets/all-connecting/all-connecting-demo.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <div class="container">
-                <div class="wrapper">
-                    <div id="myBtnContainer">
-                        <button class="btn active" onclick="filterSelection('all')">
-                            <p> Show all</p>
-                        </button>
-                        <button class="btn" onclick="filterSelection('pcomp')">
-                            <p>Physical Computing</p>
-                        </button>
-                        <button class="btn" onclick="filterSelection('fab')">
-                            <p>Fabrication</p>
-                        </button>
-                        <button class="btn" onclick="filterSelection('web')">
-                            <p> Web Application</p>
-                        </button>
-                        <button class="btn" onclick="filterSelection('videoSculpture')">
-                            <p>Video Sculpture</p>
-                        </button>
-                        <button class="btn" onclick="filterSelection('vr/ar')">
-                            <p>VR/AR</p>
-                        </button>
-                        <button class="btn" onclick="filterSelection('3d')">
-                            <p>3D</p>
-                        </button>
-
-                        <button class="btn" onclick="filterSelection('music')">
-                            <p>Music</p>
-                        </button>
-                        <button class="btn" onclick="filterSelection('product')">
-                            <p>Product Design</p>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-
-            <a class="filterDiv vr/ar 3d" class="projectLink" href="work/ar-filters.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>AR, 3D Model, 100 days</h4>
-                                <h2>Extensions of Ourselves - AR Filters</h2>
-                                <p>Addressing identity issues in society through 100 days of exploring on Spark AR
-                                    platform.
-                                </p>
-                                <p> Skills: Spark AR, Blender, and Unity </p>
-
-                            </div>
-                            <div><img class="wrapperImg" src="assets/AR-filters/ar-filter-demo.jpg" alt=""></div>
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-            <a class="filterDiv videoSculpture vr/ar 3d" class="projectLink" href="work/toilet-paper-mania.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>Interactive VR Experience </h4>
-                                <h2>Toilet Paper Mania - Immersive VR Museum</h2>
-                                <p>A virtual experience that invites people to relive, rethink, and reflect their
-                                    responses/ their change of behaviors towards the toilet paper mania during COVID-19.
-                                </p>
-                                <p> Skills: Blender and Unity </p>
-
-                            </div>
-                            <div><img class="wrapperImg" src="assets/toilet-paper-mania-demo/demo.png" alt=""></div>
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-
-
-
-            <a class="filterDiv web" class="projectLink" href="work/audio-diary.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>UX, UI, Web </h4>
-                                <h2>Audio Diary - Front-End Web</h2>
-                                <p>Talk about your feelings to get through hard times.
-                                </p>
-                                <p> Tools: Front-End,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech</p>
-                            </div>
-                            <img class="wrapperImg" src="assets/audio-diary/demo3.jpg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-            <a class="filterDiv web" class="projectLink" href="work/mood-for-food.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>UX, UI, Interaction Design, Fullstack Web </h4>
-                                <h2>Mood for Food - Fullstack Web</h2>
-                                <p>A website offers food options based on user emotions.</p>
-
-                                <p> Tools: HTML5, CSS, Javascript, Node.js, Database, MongoDB, Github, Heroku</p>
-                            </div>
-                            <img class="wrapperImg" src="/assets/mood-for-food/moodforfood_emoji.gif" alt="">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-
-
-            <a class="filterDiv pcomp fab product" class="projectLink" href="work/dance-of-the-rain.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>Installation </h4>
-                                <h2>Dance of the Rain - Light Visualization</h2>
-                                <p>A light visualization of historical rain data of cities around the globe.
-                                </p>
-                                <p> Skills: Arduino, Wifi, HTTP request, JSON parsing, API </p>
-                            </div>
-                            <img class="wrapperImg" src="/assets/dance-of-the-rain/demo1.jpg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-
-            <a class="filterDiv pcomp fab music" class="projectLink" href="work/forest-of-sounds.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>Interactive Exhibition, Generative Music </h4>
-                                <h2>Forest of Sounds - Interactive Music Exhibition</h2>
-                                <p>An interactive music installation that reinterprets the daily mundane sounds.
-                                </p>
-                                <p> Skills: Kinect, Max/Msp, Max for Live, Ableton, Composing </p>
-                            </div>
-                            <div><img class="wrapperImg" src="/assets/forest-of-sounds/demo1.png" alt=""></div>
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-
-
-
-
-            <a class="filterDiv product pcomp fab" class="projectLink" href="work/zeal.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>Product Design, Wearable Tech </h4>
-                                <h2>Zeal - Product Design</h2>
-                                <p>A personal Apple watch band that keeps you warm in the cold.
-                                </p>
-                                <p>Skills: Design Research, Market Analysis, Fabrication, Art Direction </p>
-
-                            </div>
-                            <img class="wrapperImg" src="assets/product-design-zeal/looks-like-demo.jpeg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-            <a class="filterDiv music" class="projectLink" href="work/everyday.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>Live Performance, Music, Art </h4>
-                                <h2>A Day, Any Day, Everyday - Live Performance</h2>
-                                <p>An audiovisual performance echoing the feeling of voidness and the draining of energy
-                                    while living through the COVID-19. </p>
-                                <p> Created under 6 hours for PerformaJam LIVE - CultureHub and Adjacent Jounral. </p>
-
-                            </div>
-                            <div><img class="wrapperImg" src="assets/performajam-everyday/performajam_title.jpeg"
-                                    alt=""></div>
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-            <a class="filterDiv pcomp product fab" class="projectLink" href="work/authentic-or-not.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>UX, UI, Interaction Design, & Product Design </h4>
-                                <h2>Authentic or Not - Interactive Cooking Game</h2>
-                                <p>An interactive game to learn recipes visually.
-                                </p>
-                                <p> Skills: Fabrication, Physical Computing, Creative Coding</p>
-                            </div>
-                            <img class="wrapperImg" src="assets/authentic-or-not/authenticornot-demo.jpeg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-            <a class="filterDiv pcomp fab videoSculpture" class="projectLink" href="work/double-date.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>Experience Design & Interaction Design </h4>
-                                <h2>Double Date - Video Sculpture</h2>
-                                <p> An interactive video sculpture exploring the relationships between humans and
-                                    phones. </p>
-                                <p> Tools: Arduino, Sprite, Projector, Laser-Cutter, After Effects, Premiere,
-                                    Illustrator
-                                </p>
-                            </div>
-                            <img class="wrapperImg" src="assets/double-date/presentation.jpg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-
-
-            <a class="filterDiv videoSculpture" class="projectLink" href="work/all-connecting.html">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="wrapperShow">
-                            <div class="textBlock">
-                                <h4>Experience, Interaction Design, & Performance </h4>
-                                <h2>All Connecting - Video Sculpture</h2>
-                                <p>An interactive video sculpture that exposes the systems of the Internet in real-time.
-                                </p>
-                                <p> Skills: Projection mapping, MadMapper, Processing, Syphon Recorder, Real-Time
-                                    Performance</p>
-                            </div>
-                            <img class="wrapperImg" src="assets/all-connecting/all-connecting-demo.jpeg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </a>
+            <br><br><br><br>
         </div>
-
-        <br><br><br><br>
-
         <div class="icon-bar">
             <!-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  -->
             <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  -->
